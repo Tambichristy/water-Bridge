@@ -220,8 +220,10 @@ h4{
   color: rgb(9, 211, 211);
  }
  .rs{
-  padding-top: 250px;
+  color: white;
+  padding-top: 200px;
   padding-bottom: 100px;
+  font-weight: bold;
  }
  .nice{
   display: flex;
@@ -258,8 +260,8 @@ h4{
  margin-top: 100px;
 }
 .proj h1{
-  color: rgb(9, 211, 211);
-  
+  color: green;
+  padding-left: 50px;
 }
 
 
