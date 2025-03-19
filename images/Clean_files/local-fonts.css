@@ -1,0 +1,253 @@
+
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-100-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 100;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-100-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 100;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-100italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 100italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-100italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 100italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-200-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 200;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-200-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 200;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-200italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 200italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-200italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 200italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-300-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-300-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-300italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-300italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-400-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 400;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-400-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 400;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-500-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-500-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-500italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-500italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-600-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-600-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-600italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-600italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-700-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-700-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-700italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-700italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-800-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-800-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-800italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-800italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-900-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 900;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-900-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 900;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-900italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 900italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-900italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 900italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: italic;
+						}
+						
+						@font-face {
+							font-family: 'albert';
+							src: url('https://www.waterforpeople.org/wp-content/bcf-fonts/Albert Sans/albert-sans-italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: italic;
+						}
+						

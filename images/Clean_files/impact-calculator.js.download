@@ -1,0 +1,98 @@
+(function ($) {
+
+    var input = $('input.calculator-input'),
+        output = $('input.output'),
+        form = $('form#calculator'),
+        base = $('.box-a .dollar-top, .box-a .dollar, .box-b .dollar, .box-e .dollar-base'),
+        leveraged = $('.box-c .dollar-top, .box-c .dollar'),
+        impact = $('.box-e .dollar, .box-e .dollar-top');
+
+    if ( ! input.length ) {
+        return;
+    }
+
+    function keypress(e) {
+        var allowed_keys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'enter', 'return', 'backspace'];
+        if ( 'Enter' === e.key ) {
+            //calculate();
+        }
+        return -1 !== allowed_keys.indexOf( e.key.toLowerCase() );
+    }
+
+    function validateInput() {
+        var limit = 1000000;
+        var value = input.val(),
+            cleaned = value.replace(/\D/g,'');
+        if ( cleaned != value ) {
+            input.val(cleaned);
+        }
+        cleaned = Number( cleaned );
+        if ( cleaned > limit ) {
+            cleaned = limit;
+            input.val(cleaned);
+        }
+    }
+
+    var current = {
+        a: 0,
+        b: 0,
+        c: 0,
+    };
+
+    var tweens = [];
+
+    function calculate() {
+
+        validateInput();
+
+        var _base = Number( input.val() ),
+            _leveraged = _base * 1.535,
+            _impact = _leveraged * 7;
+
+        var a = {val: current.a},
+            b = {val: current.b},
+            c = {val: current.c};
+
+        current.a = _base;
+        current.b = _leveraged;
+        current.c = _impact;
+
+        for( var i in tweens ) {
+            var tween = tweens[i];
+            tween.kill();
+        }
+        tweens = [];
+
+        var time = 3;
+
+        tweens.push(TweenLite.to(a, time, {
+            val: _base,
+            onUpdate: function () {
+                base.text('$' + a.val.toFixed(2));
+            }
+        }));
+
+        tweens.push(TweenLite.to(b, time, {
+            val: _leveraged,
+            onUpdate: function () {
+                leveraged.text('$' + b.val.toFixed(2));
+            }
+        }));
+
+        tweens.push(TweenLite.to(c, time, {
+            val: _impact,
+            onUpdate: function () {
+                impact.text('$' + c.val.toFixed(2));
+                $('input.output').val( '$' +  c.val.toFixed(2) );
+            }
+        }));
+    }
+
+    // Calculation triggers.
+    input.on('keypress', keypress);
+    //input.on('keyup', calculate);
+    input.on('change', calculate);
+    input.val('0' );
+    calculate();
+
+})(jQuery);

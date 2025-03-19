@@ -1,0 +1,45 @@
+(function($) {
+
+    // URLs to images.
+    var logoUrl = '/wp-content/uploads/2019/04/WFP_Logo_White_Landscape.png',
+        hoverUrl = '/wp-content/uploads/2024/09/WFP_Logo_RGB_Landscape.png';
+
+    // Preload secondary image.
+    var img = '<img src="' + hoverUrl + '" style="display: none;">';
+
+    // Target the img tag in header
+    var logo = $('.wfp-header img');
+
+    // Remove the 'srcset' attribute from the logo because
+    // its values prevent the logo from switching.
+    logo.removeAttr('srcset');
+
+    /*
+    // Bind to the 'hover' event to change the img src attribute
+    logo.hover(
+        // This fires when the logo is hovered.
+        function (e) {
+            logo.attr('src', hoverUrl);
+        },
+        // This fires when logo is unhovered, or 'out'
+        function (e) {
+            logo.attr('src', logoUrl);
+        }
+    );
+    */
+
+    function setBaseImg() {
+        var initial = '/wp-content/uploads/2019/04/WFP_Logo_White_Landscape.png',
+            secondary = '/wp-content/uploads/2024/09/WFP_Logo_RGB_Landscape.png';
+        if ( $(window).scrollTop() > 200 ) {
+            logoUrl = secondary;
+        } else {
+            logoUrl = initial;
+        }
+        logo.attr('src', logoUrl);
+    }
+
+    $(window).on('scroll', setBaseImg)
+    setBaseImg();
+
+})(jQuery);

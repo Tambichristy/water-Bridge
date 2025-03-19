@@ -1,0 +1,126 @@
+.wfp-impact-calculator .calculator {
+  background-color: #B0A9A0;
+  padding: 20px;
+  display: block; }
+  .wfp-impact-calculator .calculator .label {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10px; }
+  .wfp-impact-calculator .calculator .input-wrap {
+    position: relative; }
+  .wfp-impact-calculator .calculator .info {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    font-size: 24px;
+    color: #c0b9af; }
+  .wfp-impact-calculator .calculator input {
+    color: #B0A9A0;
+    display: block;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 24px;
+    height: 50px; }
+    .wfp-impact-calculator .calculator input:focus {
+      background-color: #f4f4f4; }
+  .wfp-impact-calculator .calculator input.output {
+    background-color: white; }
+.wfp-impact-calculator .box {
+  height: 200px;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px; }
+  .wfp-impact-calculator .box .dollar-top {
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -1px;
+    width: 100%;
+    font-size: 12px; }
+  .wfp-impact-calculator .box .wrap {
+    position: relative;
+    top: -50px; }
+  .wfp-impact-calculator .box svg {
+    width: 100px;
+    transition: transform 750ms; }
+  .wfp-impact-calculator .box .inner {
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: perspective(1px) translateY(-50%);
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px; }
+.wfp-impact-calculator .box-a {
+  background-color: #72B6CC;
+  color: #72B6CC; }
+.wfp-impact-calculator .box-b,
+.wfp-impact-calculator .box-d {
+  background-color: #A7B538;
+  color: #A7B538; }
+.wfp-impact-calculator .box-c {
+  background-color: #DC4A26;
+  color: #DC4A26; }
+.wfp-impact-calculator .box-d svg {
+  transform: rotateY(0deg) rotate(45deg);
+  /* needs Y at 0 deg to behave properly*/ }
+.wfp-impact-calculator .box-e {
+  background-color: #D6AA29;
+  color: #D6AA29; }
+  .wfp-impact-calculator .box-e .learn-more {
+    position: absolute;
+    bottom: 15px;
+    width: 100%; }
+    .wfp-impact-calculator .box-e .learn-more a {
+      font-family: Montserrat, sans-serif;
+      color: white;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: normal; }
+@media screen and (max-width: 580px) {
+  .wfp-impact-calculator .box .inner {
+    font-size: 18px;
+    padding: 20px; } }
+
+.fancybox-button,
+.fancybox-button:active {
+  position: absolute;
+  top: 0 !important;
+  right: 0 !important;
+  background-color: #DC4A26 !important;
+  color: white !important; }
+
+.fancybox-content {
+  padding: 60px !important;
+  width: 500px !important;
+  max-width: 90% !important; }
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+@media (min-width: 960px) {
+  .col-lg-2dot4 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 20% !important;
+    flex: 0 0 20% !important;
+    max-width: 20% !important; } }
+@media (min-width: 1140px) {
+  .col-xl-2dot4 {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 20% !important;
+    flex: 0 0 20% !important;
+    max-width: 20% !important; } }
+
+/*# sourceMappingURL=impact-calculator.css.map */

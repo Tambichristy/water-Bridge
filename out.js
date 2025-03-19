@@ -24,8 +24,8 @@ sslide();
 
 function sslide(){
   let x;
-  let show= doccument.getElementsByClassName("effect");
-  let slides = show.queryselectorAll(".agr")
+  let show= doccument.getElementsByClassName("agr");
+  
   for( x= 0; x < show.length; x++){
     show[x].style.display = "none";
   }

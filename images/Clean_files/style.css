@@ -1,0 +1,992 @@
+/*
+Theme Name: Beaver Builder Child Theme
+Theme URI: http://www.wpbeaverbuilder.com
+Version: 1.0
+Description: An example child theme that can be used as a starting point for custom development.
+Author: The Beaver Builder Team
+Author URI: http://www.fastlinemedia.com
+template: bb-theme
+*/
+
+/* Add your custom styles here... */
+
+/* Customizer Code */
+
+/*General*/
+@media screen and (max-width: 1024px) {
+    .fl-col-group-responsive-reversed .fl-col:nth-of-type(1) {
+        -webkit-box-ordinal-group: 12!important;
+        -moz-box-ordinal-group: 12;
+        -ms-flex-order: 12;
+        -webkit-order: 12;
+        order: 12!important;
+    }
+    .fl-col-group-responsive-reversed .fl-col:nth-of-type(2) {
+        -webkit-box-ordinal-group: 11!important;
+        -moz-box-ordinal-group: 11;
+        -ms-flex-order: 11;
+        -webkit-order: 11;
+        order: 11!important;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        b {
+            font-weight: bold!important;
+        }
+    }
+}
+b, strong {
+    font-weight: 700!important;
+}
+h2 b { font-weight: 700!important; }
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+    max-width: none;
+    border-bottom:1px solid #7b746b;
+}
+@media screen and (max-width:768px) {
+    p {
+        font-size: 14px!important;
+    }
+    .fl-builder-content .fl-node-5cd2d63842723 .uabb-creative-button-wrap a.uabb-button {
+        padding-top: 6px !important;
+    }
+}
+/*body text*/
+p, .pp-subheading {
+    font-weight:300!important;
+    font-size:16px!important;
+    letter-spacing:1px!important;
+
+}
+
+.pp-heading .heading-title {
+    margin-bottom:20px!important;
+}
+
+/*Desktop Menu changes*/
+.fl-node-5ce0459057873 > .fl-row-content-wrap {
+    background-color:#d0cdc9;
+}
+.fl-node-5ce0459057873.toggled .sub-menu {
+    background-color: rgba(255,255,255,0.9)!important;
+}
+.fl-node-5ce0459057872 .menu > li.current-menu-item > a {
+    color:#ffffff;
+}
+.pp-advanced-menu .menu > li.current-menu-item {
+    border-bottom: 4px solid #878800;
+}
+.fl-node-5ce0459057872 .pp-advanced-menu .menu > li:hover {
+    border-bottom: 4px solid #878800;
+}
+@media (min-width: 1025px) {
+    .fl-node-5ce0459057872 .menu .pp-has-submenu .sub-menu {
+        top: 108%;
+    }
+}
+.fl-node-5ce0459057872 .menu li:last-of-type {
+    border-top:none;
+}
+.fl-node-5ce0459057872 .sub-menu {
+    background-color: #d0cdc9;
+}
+.fl-node-5ce0459057872 .pp-advanced-menu .pp-has-submenu-container a > span {
+
+}
+.fl-node-5ce0459057873.toggled .fl-row-content-wrap li:not(.menu-donate) a:hover {
+    color:#a8b400!important;
+}
+#menu-item-41 {
+    border-top: 1px solid white;
+}
+@media screen and (max-width:667px) and (min-width:666px) {
+    .fl-node-5d38e7980617a.fl-module>.fl-module-content {
+        margin-top: 10px;
+        max-width: 110px;
+    }
+    .fl-node-5ce0459057872.fl-module>.fl-module-content {
+        margin-left: 140px!important;
+        margin-bottom: 10px;
+    }
+    .fl-node-5ced41e66b015>.fl-module-content {
+        margin-right: 150px;
+    }
+}
+
+.safari-icon-left .left-title-image {
+    display: flex;
+    align-items: center;
+}
+
+
+/*iphone landscape items*/
+
+@media screen and (max-width:767px) and (min-width:668px) {
+    /*menu changes*/
+    .fl-node-5d38e7980617a.fl-module>.fl-module-content {
+        margin-top: 15px;
+        max-width: 110px;
+    }
+    .fl-node-5ce0459057872.fl-module>.fl-module-content {
+        margin-left: 160px!important;
+        margin-bottom: 10px;
+    }
+    .fl-node-5ced41e66b015>.fl-module-content {
+        margin-right: 150px;
+    }
+    /*video changes*/
+    .wfp-hero-video .logo {
+        top: 30px !important;
+    }
+    .wfp-hero-video .cta {
+        bottom: 40px !important;
+    }
+    .fl-node-5cf79c277f83c .fl-col-group {
+        width: 58% !important;
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    div.fl-node-5d0a3111e20dc .pp-heading-content .pp-heading .heading-title {
+        text-align: left;
+    }
+    div.fl-node-5d0a3111e20dc .pp-heading-content .pp-sub-heading p {
+        text-align: left;
+    }
+    .fl-node-5d0a3111e20dd .uabb-creative-button-wrap.uabb-creative-button-reponsive-center {
+        text-align: left;
+    }
+    .water-for-people-map .selected-item a {
+        top: -8px;
+    }
+}
+
+
+/*ipad items*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*menu changes*/
+    .fl-node-5d38e7980617a.fl-module>.fl-module-content {
+        margin-top: 15px;
+        max-width: 110px;
+    }
+    .fl-node-5ce0459057872.fl-module>.fl-module-content {}
+    .fl-node-5ced41e66b015>.fl-module-content {
+        margin-right: 90px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .fl-node-5ce0459057872.fl-module>.fl-module-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 168px;
+    }
+    .fl-node-5d38e7980617a .uabb-button.uabb-creative-button.uabb-creative-flat-btn.uabb-none-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 18px;
+    }
+    /*video changes*/
+    .wfp-hero-video .title {
+        margin-top: 15px;
+    }
+    .wfp-hero-video .logo {
+        top: 20px !important;
+    }
+    .wfp-hero-video .cta {
+        bottom: 30px !important;
+    }
+    .fl-node-5cf79c277f83c .fl-col-group {
+        width: 58% !important;
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+}
+
+
+/*Nav Bar submenu issue */
+
+.fl-node-5ce0459057872 .pp-advanced-menu .menu>li>.pp-has-submenu-container>a {
+    padding-top: 1px;
+    padding-bottom: 24px!important;
+}
+
+
+/*.pp-advanced-menu .pp-has-submenu:hover > .sub-menu {
+	margin-top:21px;
+}*/
+
+
+/*Footer*/
+
+input[type=search] {
+    border-radius: 12px;
+    height: 47px;
+    color: #a09b92;
+    font-size: 15px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-mobile-1 {
+    text-align: left;
+}
+
+.footer-mobile-2 {
+    text-align: right;
+}
+
+@media screen and (max-width:768px) {
+    .wfp-block .fl-col-content {
+        height: 250px;
+        margin-top: 20px!important;
+    }
+    .wfp-block .uabb-heading {
+        vertical-align: middle!important;
+        padding-top: 40px!important
+    }
+    .wfp-block .uabb-heading {
+        margin-top: 70px!important;
+    }
+    .footer-mobile {
+        text-align: center!important;
+    }
+    .fl-icon-group-left {
+        text-align: center;
+    }
+    .fl-module .fl-module-rich-text .fl-node-5caf591472e28 .footer-mobile {
+        text-align: center!important;
+    }
+    .footer-mobile-1 {
+        text-align: center;
+    }
+    .footer-mobile-2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1253px) {
+    .block-heading .uabb-heading-text {
+        font-size: 26px!important;
+    }
+}
+
+.fl-node-5ce52d2d7fb4e .uabb-imgicon-wrap {
+    display: none;
+}
+
+.fl-node-5ce52f9f69e43 .uabb-imgicon-wrap {
+    display: none;
+}
+
+.fl-node-5ce52fb323c94 .uabb-imgicon-wrap {
+    display: none;
+}
+
+.fl-node-5ce52fc957562 .uabb-imgicon-wrap {
+    display: none;
+}
+
+#wfp-logo {
+    background-image: url(https://waterforpeople.wpengine.com/wp-content/uploads/2019/04/WFP_Logo_White_Landscape.png);
+    background-size: contain!important;
+    background-repeat: no-repeat;
+}
+
+#wfp-logo:hover {
+    background-image: url(https://waterforpeople.wpengine.com/wp-content/uploads/2019/04/WFP_Logo_RGB_Landscape.png);
+    background-size: contain!important;
+    background-repeat: no-repeat;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+
+/*Donation button in header*/
+
+.menu-donate > a {
+    background-color: #878800;
+    border-radius: 25px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    border: 1px #ffffff solid;
+    padding-top: 3px!important;
+    padding-bottom: 3px!important;
+}
+
+.menu-donate:hover > a {
+    color: #ffffff !important;
+}
+
+.menu-donate .submenu {
+    margin-top: 25px !important;
+    border-top: 4px solid #a8b400;
+}
+
+.fl-node-5ce0459057872 .pp-advanced-menu .menu>li>a,
+.fl-node-5ce0459057872 .pp-advanced-menu .menu>li>.pp-has-submenu-container>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.menu-donate:hover {
+    /* background-color: #a8b400; */
+    transition-duration: 1s;
+}
+
+.wfp-header.toggled .menu-donate {
+    background: none !important;
+}
+
+.fl-node-5d38e7980617a .uabb-creative-button-wrap a,
+.fl-node-5d38e7980617a .uabb-creative-button-wrap a:visited {
+    border: 1px solid #ffffff;
+}
+
+.fl-node-5d38e7980617a .uabb-creative-button-wrap a {
+    font-size: 12px!important;
+    letter-spacing: 2px!important;
+}
+
+/*#menu-item-41 {
+	margin-top:5px;
+}*/
+
+
+/*Footer*/
+
+@media screen and (min-width:1315px) {
+    .fl-node-5cdd9ce197361>.fl-row-content-wrap {
+        background-position: 50% 40%;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .fl-node-5cdd9ce197361>.fl-row-content-wrap {
+        background-position: 50% 30%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .fl-node-5cd462f6cc789>.fl-row-content-wrap {
+        background-position: 63% 96%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .fl-node-5cd462f6cc789>.fl-row-content-wrap {
+        background-position: 63% 66%;
+    }
+}
+
+
+/*About page Footer*/
+
+.fl-node-5d25f3647c350>.fl-row-content-wrap {
+    background-position: center 15%;
+}
+
+
+/*Our Impact Footer*/
+
+@media screen and (min-width:1600px) {
+    .fl-node-5d42fab48d521 > .fl-row-content-wrap {
+        background-position: center 30%;
+    }
+
+    .fl-node-5d42fb18d3313 > .fl-row-content-wrap {
+        background-position: center 15%;
+    }
+}
+@media screen and (max-width:1600px) {
+    .fl-node-5d42fb18d3313 > .fl-row-content-wrap {
+        background-position: center 20%;
+    }
+}
+
+
+/*Our Work Footer*/
+
+@media screen and (min-width:1400px) {
+    .fl-node-5d42fb9db6f11 > .fl-row-content-wrap {
+        background-position: center 25%;
+    }
+}
+
+
+
+
+/*Map*/
+
+.water-for-people-map .nav a {
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 400!important;
+    color: #a09b92;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#wfp-flex-row {
+    flex-direction: row!important;
+    display: flex!important;
+    justify-content: center;
+}
+
+.wfp-flex-item {
+    display: inline-block!important;
+}
+
+.water-for-people-map svg {
+    border: 1px #a09b92 solid;
+    background-color: #ffffff;
+}
+
+
+/*Our Work page*/
+
+.fl-node-5d0a40273bc62>.fl-row-content-wrap {
+    background-position: center 80%;
+}
+
+
+/*This is where you come in row*/
+
+.hp-icon-flex {}
+
+.fl-node-5cf79c277f83c .fl-col-group {
+    text-align: center!important;
+}
+
+.fl-node-5cf79c277f83c .icon-list {
+    display: inline-block;
+    width: 180px;
+    float: none;
+    /*max-width: 143px;*/
+}
+
+
+/*this is where you come in icons - column width and icon size for desktop*/
+
+@media screen and (min-width:1025px) {
+    .fl-node-5cf79c277f83c .icon-list {
+        max-width: 143px;
+    }
+    .wfp-icon img[class*="wp-image-"] {
+        max-width: 120px!important;
+    }
+}
+
+
+/*this is where you come in icons - transition for all devices and icon size for tablet*/
+
+.wfp-icon img[class*="wp-image-"] {
+    transition: all .2s ease-in-out;
+    max-width: 180px;
+}
+
+
+/*this is where you come in icons - icon size for mobile*/
+
+@media screen and (max-width:767px) {
+    .wfp-icon img[class*="wp-image-"] {
+        max-width: 120px;
+    }
+}
+
+.wfp-icon img[class*="wp-image-"]:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .wfp-icon img[class*="wp-image-"] {
+        max-width: 120px;
+    }
+}
+
+
+/*Logo carousel*/
+
+.pp-logo {
+    height: 150px!important;
+}
+
+.bx-viewport {
+    height: inherit!important;
+}
+
+
+/*Line under stories carousel*/
+
+.bx-wrapper .bx-pager {
+    color: #a09b92!important;
+}
+
+
+/*All buttons*/
+
+@media screen and (max-width:768px) {
+    .uabb-creative-button-wrap a {
+        padding-top: 5px!important;
+        padding-bottom: 5px!important;
+        font-size: 14px!important;
+    }
+}
+
+
+/*Flip boxes*/
+
+@media screen and (max-width: 550px) {
+    .fl-row.fl-row-full-width.fl-row-bg-photo.fl-node-5cd2d8b5bd767.fl-row-bg-overlay {
+        display: none!important;
+    }
+    .fl-node-5ce0459057870.fl-col>.fl-col-content {
+        margin-left: 40px;
+    }
+}
+
+/*bolivia page*/
+.infobox-photo-left-title .uabb-infobox-title-wrap {
+    width:auto!important;
+}
+/*everyone forever page*/
+@media screen and (max-width:767px) {
+    .fl-node-5d49d78a03bdd > .fl-row-content-wrap {
+
+        background-position: 30% top;
+    }
+}
+div.fl-node-5d470fa33e90b .pp-heading-content .pp-sub-heading p:last-of-type  {
+    font-size:22px!important;
+    font-weight:bolder!important;
+}
+.fl-node-5d49c507ce520 > .fl-row-content-wrap {
+    background-position: center 40%;
+}
+@media screen and (min-width:1500px) {
+    .fl-node-5d49c507ce520 > .fl-row-content-wrap {
+        background-position: center 35%;
+    }
+}
+/*Collapsomatic*/
+.collapseomatic {
+    color:#a7b538;
+}
+/*Water page*/
+.fl-node-5d470f819e37b > .fl-row-content-wrap {
+    background-position: left 30%;
+}
+/*Our Team*/
+.uabb-modal-photo {
+    opacity:0.8;
+}
+.uabb-modal-photo:hover {
+    opacity:1;
+    transition-duration:.9s;
+}
+.team-heading .pp-heading .heading-title {
+    margin-bottom: 8px!important;
+}
+/*Rwanda*/
+.fl-node-5d53f457abdfa > .fl-row-content-wrap {
+    background-position: center 5%;
+}
+/*Honduras*/
+.fl-node-5d52e57f80c0e > .fl-row-content-wrap {
+    background-position: center 70%;
+}
+.water-for-people-map .container .info ul li {
+    font-weight: 300;
+}
+.water-for-people-map .container a {
+    font-weight: 300;
+}
+/*News*/
+.news-flex-container {
+    display: flex!important;
+    flex-direction: row;
+}
+
+.news-item {
+    max-width: 31%;
+    float: left;
+    margin-left:5px;
+}
+sup {
+    font-size:50%;
+    top: -.9em;
+}
+h2.fl-slide-title {
+    font-weight:800;
+    padding-bottom: 10px;
+}
+.fl-slide-text > * {
+    margin: 0 0 5px !important;
+}
+.fl-slide-text h2 {
+    font-weight:800;
+}
+/*Gravity Forms*/
+input[type=submit] {
+    background: #a8b400;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family:Montserrat;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600!important;
+    font-size: 16px;
+    line-height: 22.5px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 22px;
+    font-weight: normal;
+    text-shadow: none;
+    border: 0px solid #6f7700;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 25px;
+}
+
+/*text sliders*/
+/*.fl-slide-content-wrap {
+	position:relative;
+	padding: 8% 0;
+}
+.fl-slide-content {
+	position:absolute!important;
+	top: 40%!important;
+  left: 0%;
+}*/
+
+
+/*collapse o matic */
+.collapseomatic {
+    background-image: none;
+    background-repeat: no-repeat;
+    padding: 0 0;
+    cursor: pointer;
+}
+
+.colomat-close {
+    background-image: none;
+}
+
+.collapseomatic_content {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+/*Content block button*/
+.wp-block-button__link {
+    background: #a8b400;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family:Montserrat;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600!important;
+    font-size: 16px;
+    line-height: 22.5px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 22px;
+    font-weight: normal;
+    text-shadow: none;
+    border: 0px solid #6f7700;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 25px;
+}
+
+/* End Customizer Code */
+
+
+.thisify {
+    font-weight: bold !important;
+}
+
+.wfp-hero-video .title {
+    letter-spacing: 2px;
+    /*/font-size: 47px!important;*/
+}
+
+.fl-node-5ce0459057872 .menu li:last-of-type {
+    border-top: 1px solid white;
+}
+
+.fl-node-5cdd9bace9394 {
+    display: block;
+}
+
+.fl-node-5cdd9bace9394 .fl-col-group {
+    text-align: center;
+}
+
+.fl-node-5cdd9bace9394 .icon-list {
+    display: inline-block;
+    width: 180px;
+    float: none;
+}
+
+
+
+/* Nudge buttons */
+.fl-builder-content .fl-node-5cd2d63842723 .uabb-creative-button-wrap a.uabb-button  {
+    padding-top: 1px !important;
+}
+
+
+.fl-post-carousel {
+    text-transform: uppercase;
+}
+.fl-post-carousel .country {
+    position: relative;
+    top: -10px;
+    text-transform: uppercase;
+}
+
+.slider-title {
+
+}
+
+.fl-post-carousel-title {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.fl-post-carousel .country {
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .pp-image-carousel {
+        max-height: 380px;
+        margin-top: -30px;
+    }
+}
+
+.water-for-people-map .container .info ul,
+.water-for-people-map .container .info ul li
+{
+    padding-left: 0;
+    /*list-style: none;*/
+    margin-left: 19px;
+}
+
+@media screen and (min-width: 768px) {
+    .water-for-people-map .info {
+        width: 240px;
+    }
+}
+
+.water-for-people-map .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+
+.wfp-flip-boxes strong,
+.wfp-flip-boxes b {
+    font-weight: bold !important;
+}
+
+.water-for-people-map .info .title {
+    display: none;
+}
+
+.water-for-people-map .selected-item,
+.water-for-people-map .selected-item span
+{
+    font-family: 'Montserrat', Sans-Serif;
+    font-weight: 600 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .water-for-people-map .nav a {
+        padding: 5px 5px;
+    }
+}
+.selected-item {
+    color: #a09b92;
+}
+
+.water-for-people-map .selected-item a {
+    top: -5px;
+}
+.water-for-people-map .container .info .facts {
+    margin: 0 0 10px;
+}
+
+.fl-node-5d38e7980617a .uabb-button.uabb-creative-button.uabb-creative-flat-btn.uabb-none-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .fl-col-group.fl-col-group-responsive-reversed {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: row wrap;
+        -ms-box-orient: horizontal;
+        -webkit-flex-flow: row wrap;
+    }
+}
+
+
+.fl-post-carousel-title {
+    display: inline-block;
+    margin: 0 25px !important;
+}
+
+
+
+/**
+ * Carousel dots / line fix.
+ */
+
+/* Nudge the line up */
+.fl-node-5cf12a2b6c21b, /* About Us */
+.fl-node-5cf7ad33a75aa, /* Get Involved */
+.fl-node-5d7a7481bf331, /* Give At Work  */
+.fl-node-5d76596c07c6f, /* Become a corporate partner */
+.fl-node-5d8243d6ebf7d  /* Global Row */
+{
+    position: relative;
+    top: -37px;
+}
+
+/** Nudge the dots down */
+.fl-node-5cf1277357a67 .bx-wrapper .bx-pager,  /* About Us */
+.fl-node-5cf7ad1a56734 .bx-wrapper .bx-pager,  /* Get Involved */
+.fl-node-5d6e65615b808 .bx-wrapper .bx-pager,  /* Give At Work */
+.fl-node-5d76596c07c6d .bx-wrapper .bx-pager,  /* Become a corporate partner */
+.fl-node-5d8243d6ebf7b .bx-wrapper .bx-pager   /* Global Row */
+{
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+}
+
+.wfp-carousel-wrap .bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+}
+
+.wfp-carousel-wrap .fl-module-separator:last-of-type {
+    position: relative;
+    top: -37px;
+}
+
+
+.fl-node-5ce54381e5e49 .fl-separator {
+    border-top: 1px solid #a09b92;
+    max-width: 100%;
+    margin: auto;
+}
+
+.water-for-people-map ul.facts {
+}
+.fl-node-5ce0459057872 .menu > li {
+    border-bottom: 4px solid transparent;
+}
+
+
+.page-id-185 .Bolivia .learn-more,
+.page-id-641 .Guatemala .learn-more,
+.page-id-642 .Honduras .learn-more,
+.page-id-645 .India .learn-more,
+.page-id-646 .Malawi .learn-more,
+.page-id-643 .Nicaragua .learn-more,
+.page-id-644 .Peru .learn-more,
+.page-id-647 .Rwanda .learn-more,
+.page-id-648 .Uganda .learn-more
+{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .page-id-185 .Bolivia,
+    .page-id-641 .Guatemala,
+    .page-id-642 .Honduras,
+    .page-id-645 .India,
+    .page-id-646 .Malawi,
+    .page-id-643 .Nicaragua,
+    .page-id-644 .Peru,
+    .page-id-647 .Rwanda,
+    .page-id-648 .Uganda
+    {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fl-node-5ce0459057872.fl-module > .fl-module-content {
+        top: initial !important;
+        transform: none !important;
+        right: initial !important;
+        width: 100% !important;
+        display: block;
+        position: relative;
+    }
+
+
+}
+
+/*@media screen and (min-width: 768px) and (max-width: 1024px) {*/
+/*    .fl-node-5ce0459057872 .pp-advanced-menu-mobile-toggle {*/
+/*        position: absolute;*/
+/*        width: 50px;*/
+/*        text-align: left;*/
+/*        left: 0;*/
+/*        margin: auto;*/
+/*        margin-top: -3px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width:767px) and (min-width:668px) {*/
+/*    .fl-node-5ce0459057872.fl-module > .fl-module-content {*/
+/*        margin-left: 0 !important;*/
+/*        margin-bottom: 10px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width:767px) and (min-width:668px) {*/
+/*    .fl-node-5ce0459057872.fl-module > .fl-module-content {*/
+/*        margin-left: 0 !important;*/
+/*        margin-bottom: 10px;*/
+/*    }*/
+/*}*/
+
+/*.fl-node-5ce0459057872.fl-module > .fl-module-content {*/
+/*    margin-left: 0 !important;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+

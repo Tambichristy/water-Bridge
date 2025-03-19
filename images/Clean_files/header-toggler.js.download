@@ -1,0 +1,24 @@
+(function($) {
+
+    var controller,
+        node = $('.wfp-header');
+
+    function toggleHeader() {
+
+        var yPos = $(window).scrollTop();
+
+        if ( yPos > 200 ) {
+            if ( ! node.hasClass('toggled') ) {
+                node.addClass('toggled');
+            }
+        } else {
+            node.removeClass('toggled');
+        }
+    }
+
+    $(window).on('scroll', toggleHeader);
+    toggleHeader();
+
+    //_scrollMagic();
+
+})(jQuery);
